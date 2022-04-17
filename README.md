@@ -1,9 +1,25 @@
 # BlackHoleDiscBlink
 Arduino sketch to blink Black Hole disc LEDs.  
-This modification requires isolating the 11 lamps under the spinning disk, and running control lines to each lamp
-from an Atmega328PU, and replacing the bulbs with standard pinball LEDs.
 
-![blackhole_blinkers](https://user-images.githubusercontent.com/60443687/163690061-19d5acf5-9ea5-4922-b003-7a1a616d8352.png)
+455 blinker bulbs are scarce and expensive now, so it makes sense to isolate the 11 disc lamps from the GI and control pinball LEDs with an Atmega328PU microprocessor.  An added bonus is that pinball LEDs give off almost no heat, so will not warp the disc.  You could use a combination of slow/fast blinking LEDs, but they won't look as good because they blink at about the same on/off times and 'sync up'.
+
+Parts list:
+
+<li>1 19-row minimum stripboard
+<li>1 Atmega328PU processor 
+<li>1 28-pin DIP socket
+<li>4 1N4004 diodes
+<li>1 7805 regulator
+<li>1 1000uF (35v) capacitor
+<li>1 10uF (35v) capacitor
+<li>.100 headers, connector housings, & contacts
+<li>hook up wire
+<li>11 warm white 44-base pinball LEDs
+      
+
+![blackhole_blinkers](https://user-images.githubusercontent.com/60443687/163720949-9b57f64a-1e72-44b9-8b92-9ee652db8fa7.png)
+
+With an Arduino and a light sensor, I measured the on/off times of several real 455 bulbs to derive the min/max blink times.  I found that most 455 bulbs had on/off times between 100 and 1000 ms.  The sketch randomizes the blink on/off times to each LED about every 10 seconds.
 
 <div align="left">
       <a href="https://www.youtube.com/watch?v=HBt1XZJ4JSo">
