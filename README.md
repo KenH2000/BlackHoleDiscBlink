@@ -17,7 +17,7 @@ Parts list:
 <li>11 warm white 44-base pinball LEDs
       
 
-![blackhole_blinkers](https://user-images.githubusercontent.com/60443687/163720949-9b57f64a-1e72-44b9-8b92-9ee652db8fa7.png)
+![blackhole_blinkers](https://user-images.githubusercontent.com/60443687/163850766-168c6913-259c-4e9c-a849-e6f80e6093a9.png)
 
 With an Arduino and a light sensor, I measured the on/off times of several real 455 bulbs to derive the min/max blink times.  I found that most 455 bulbs had on/off times between 100 and 1000 ms.  The sketch randomizes the blink on/off times to each LED about every 10 seconds.
 
