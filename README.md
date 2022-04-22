@@ -24,11 +24,11 @@ With an Arduino and a light sensor, I measured the on/off times of several real 
 The optional motor control board will turn the disc spin motor ON or OFF based on these settings selected using the SET BUTTON:
       
 <li>1. ON     -- disc motor is always ON.  
-<br>The Indicator LED is ON for the ON setting.
+<br>(The Indicator LED is ON)
 <li>2. OFF    -- disc motor is ON in Game Play and OFF in Game Over.  
-<br>The indicator LED is OFF for the OFF setting.
+<br>(The indicator LED is OFF)
 <li>3. TIMED  -- disc motor is ON in Game Play runs for 10 minutes after Game Over and then turns OFF until a new game is started.
-<br>The indicator LED flashes for the TIMED setting.
+<br>(The indicator LED flashes)
 
 The last mode selected with the SET BUTTON is saved to EEPROM and applied on startup.
 
